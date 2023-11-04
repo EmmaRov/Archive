@@ -17,5 +17,10 @@ RK4.cpp is tested in main() with three particles and a dimentionless force to sh
 
 RK4_plotting.py is a short python script used for plotting the data it produces.
 
+How to build and run:
+$ g++ src/RK4.cpp -I include -o RK4.exe -larmadillo
+$ ./RK4.exe
+$ python3 RK4_plotting.py 
+
 ## MC.cpp
 Markov-chain Monte Carlo
