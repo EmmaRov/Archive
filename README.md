@@ -8,8 +8,11 @@ The problem was set up to scan the whole parameter space, but I wanted to experi
 
 As mentioned, there is a more detaild description of the algorithm and project()
 
+## wavelet_analysis.py
+
 
 ## Jacobi.cpp
+
 
 ## RK4.cpp
 RK4.cpp, with its assosiated header RK4.hpp is a part of a bigger project to which I contributed with a numerical integrator. In this program i apply the fourth order Runge-Kutta method of integration on particles flying around, affected by some force. In this spesific case, the force acting was dependent on the position of all other particles in the system. This made the implementation of RK4 a bit more tricky, as all of the particles had to be evolved in time in perfect tandem. The probelm was solved, and the program tested and proved to work perfectly when merged with the rest of the code structure (not included here, as most of it is not my code). 
@@ -23,4 +26,10 @@ $ ./RK4.exe
 $ python3 RK4_plotting.py 
 
 ## MC.cpp
-Markov-chain Monte Carlo
+In this project we used Markov-chain Monte Carlo algorithm with the Metropolis algorithm to study the Ising-model. The program contains a IsingModel class, where instances of this class were run in parallel to sample millions of samples from the studied probability distributions. The class contains 4 relevant methods and a constructor. set_first_sample() lets you decide which state you start in, the following samples will be dependent on this choice, so a better start yields better results. sample_energy() and sample_magnetisation() returns the current state. And MC_cycle() runs a Monte Carlo cycle. In the end of the file is a main() function showcasing an example of how these methods can be used.
+
+How to build and run:
+$ g++ src/MC.cpp -I include -o MC.exe -larmadillo
+$ ./MC.exe
+
+There is also a python program that can be usde for some crude plotting (was initialy only used for testing) called MC_plotting.py  (remember to add that)
