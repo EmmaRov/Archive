@@ -1,5 +1,5 @@
 # Some of my earlier projects
-This repostitory is a collection of my previous projects that I am most happy about. Most of them are parts of  bigger projects that I have tackled in collaboration with others. For this reason they might not be very useful on their own, or general enough to be directly applied to other use. However they complete in their application of useful algorithms and data structure. 
+This repostitory is a collection of some of my previous projects. Most of these were part of a bigger program that I made in collaberation with my peers. For this reason they might not be very useful on their own, but in return they are 100% my work. 
 
 ## vel_field.py
 This is the oldest piece of code in this folder, written within a year from when i started to learn python. It takes in the data from data.mat and does some simple calculations and vizualisations. The data is taken from a fluid mechanics experiment of water flowing through a tube. The goal of this program was just to vizualise concepts such as divergence and curl, and numerically test Stoke's theorem. Feel free to run it, just go to the "Python"-folder.
@@ -38,4 +38,4 @@ How to build and run:
 $ g++ src/MC.cpp -I include -o MC.exe -larmadillo
 $ ./MC.exe
 
-There is also a python program that can be usde for some crude plotting (was initialy only used for testing) called MC_plotting.py  (remember to add that)
+There is also a python program that can be usde for some crude plotting (was initialy only used for testing) called MC_plotting.py  
