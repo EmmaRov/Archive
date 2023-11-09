@@ -31,6 +31,6 @@ public:
 
     void set_first_sample(std::string setting);
 
-    Mat<int> IsingModel::return_lattice();
+    arma::Mat<int> return_lattice();
 
 };
